@@ -1,0 +1,15 @@
+https://serip39.hatenablog.com/entry/2020/06/20/234000
+
+2. Dockerイメージのビルド
+$ docker-compose build
+3. create-next-app を実行
+$ docker-compose run --rm nextjs yarn create next-app --example with-typescript-eslint-jest app
+
+docker-compose up -d
+
+
+https://nextjs.org/learn/basics/create-nextjs-app/setup
+docker-compose run --rm nextjs npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"
+
+docker-compose run --rm nextjs npm run dev
+
