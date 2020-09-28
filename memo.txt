@@ -13,3 +13,15 @@ docker-compose run --rm nextjs npx create-next-app nextjs-blog --use-npm --examp
 
 docker-compose run --rm nextjs npm run dev
 
+
+https://nextjs.org/learn/basics/data-fetching/getstaticprops-details
+DBにクエリを投げるイメージ
+import someDatabaseSDK from 'someDatabaseSDK'
+
+const databaseClient = someDatabaseSDK.createClient(...)
+
+export async function getSortedPostsData() {
+  // Instead of the file system,
+  // fetch post data from a database
+  return databaseClient.query('SELECT posts...')
+}
